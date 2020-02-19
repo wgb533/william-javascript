@@ -44,7 +44,53 @@
             let greeting = 'My name is ' + name;
             console.log(greeting);
 
+        console.log("Using functions:");
+            //function to make square numbers
+            function makeSquare(theNumb) {
+            let squared = theNumb * theNumb;
+            return squared;
+            }
+            console.log(makeSquare(21));
+            let try01 = makeSquare(21);
+            console.log(try01);
+
+        // Functions on my own
+            function makefullName(fName, mName, lName) {
+            let fullName = fName + ' ' + mName + ' ' + lName;
+            return fullName;
+            }
+            console.log(makefullName('William', 'Garrett', 'Bazarsky'));
+            console.log(makefullName("Robert", "Beto", "O'Rourke"));
+            console.log(makefullName.length)
+
+        // Make a name with middle initial
+            function makeBetterName(firstName, middleName, lastName) {
+            if (middleName.length === 1) {
+                middleName = middleName + ".";
+                let fullName = firstName + " " + middleName + " " + lastName;
+                return fullName;
+            } else {
+                let fullName = firstName + " " + middleName + " " + lastName;
+                return fullName;
+            }
+        }
+            console.log(makeBetterName("Joan", "Marie", "Larkin"));
+            console.log(makeBetterName("John", "F", "Kennedy"));
+
+        // This is my function
+            function gameResults(homeScore, awayScore) {
+                if (homeScore > awayScore) {
+                return 'The home team won';
+            } else if (homeScore === awayScore) {
+                    return 'They tied';
+                } else {
+                return 'The away team won'; 
+                }
+                }
+            console.log(gameResults(1,5))
+            console.log(gameResults(5,1))
+            console.log(gameResults(5,5))
+
         </script>
-    
 </body>
-</html>
+</html> 
